@@ -1,0 +1,28 @@
+body {
+    width: 100%;
+    background-color: #f9f9f9;
+    justify-content: center;
+}
+th {
+    background-color: #ddd;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    white-space: nowrap; /* 줄바꿈 방지 */
+}
+
+td > input:not([type="button"]):not([type="submit"]):not([type="reset"]) , td > select {
+    width: 100%;
+    box-sizing: border-box; /* 패딩 포함한 전체 너비 계산 */
+}
+th,td,input,select,label,.button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 9999px;
+}

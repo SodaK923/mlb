@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+* {
+    text-decoration: none;
+    color: #333;
+}
+.product-list-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+.product-list-header > div, .product-list-header > div > div {
+    display: flex;
+}
+.search-box {
+    display: flex;
+}
+.search-box-category,.search-box-team {
+    justify-content: center;
+    padding: 10px;
+}
+.team-item, .category-item {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border:#333 1px solid;
+    border-radius: 9999px;
+}
+.team-item > label, .category-item > label, .team-item > input, .category-item > input {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.search,.reset-button {
+    height: 50px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    max-width: 16vw;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.product-thum-img {
+    width: 16vw;
+}
+.page-nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+.truncate {
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    overflow: hidden; /* 넘치는 부분 감춤 */
+    text-overflow: ellipsis; /* 말줄임표(...) 적용 */
+    width: 100%; /* 컨테이너의 너비 지정 */
+}
+.product-thum-img,.product-name,.product-category,.product-team {
+    margin: 0;
+}
+.page-number,.page-button,.add-product-button {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}

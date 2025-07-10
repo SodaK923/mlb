@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: #333 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+.item > .product-image {
+    width: 150px;
+}
+.item > .info {
+    display: flex;
+    flex-direction: column;
+}
+form > div > input, form > div > select {
+    height: 40px;
+    margin: 10px;
+    border: #333 1px solid;
+    border-radius: 9999px;
+}
